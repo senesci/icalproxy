@@ -3,7 +3,7 @@
 Sets up a webserver that proxies another iCal calendar, but modifies the response so that all events are considered all-day.
 
 ## Why?
-D2L Brightspace's normal calendar link display events weird in the iOS Calendar app. I want them to be shown at the top of each day, so that I can see them easier. This program solves that issue, because all events (assignments) are marked as taking the entire day. Additionally, a reminder is added to all events. Just something I threw together in like 10 minutes with Claude, but it works.
+D2L Brightspace's normal calendar link displays events weird in the iOS Calendar app. I want them to be shown at the top of each day, so that I can see them easier. This program solves that issue, because all events (assignments) are marked as taking the entire day. Additionally, a reminder is added to all events. Just something I threw together in like 10 minutes with Claude, but it works.
 
 ## Deployment (FreeBSD)
 
