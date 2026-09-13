@@ -102,4 +102,16 @@ curl http://127.0.0.1:8080/calendar.ics
 
 ### 7. Configure Caddy
 
-Add a reverse proxy with `basicauth` in your Caddyfile, e.g.:
+Add a reverse proxy with `basic_auth` in your Caddyfile, e.g.:
+```caddy
+your-domain.com {
+        basic_auth {
+                username your-bcrypt-hash
+        }
+
+        reverse_proxy 127.0.0.1:8080
+}
+```
+
+### 8. Add to calendar app
+Add ``https://your-domain.com/calendar.ics`` to your calendar app. If you set a reverse proxy with a username + password, you will be prompted for credentials.
